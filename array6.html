@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<ul id="list1"></ul>
+<body>
+	<script type="text/javascript">
+		let trainees=['vandy','krish','monisha','ganga']
+		let trainees1=[
+		{
+			'name':'prashanth',
+			'rollno':1234
+		},
+		{
+			'name':'vandana',
+			'rollno':5678
+		}]
+		let ul='';
+		trainees1.map(function(each_trainee,i,arr){  
+			ul+="<ul><li>"+each_trainee.name+"</li><li>"+each_trainee.rollno+"</li></ul>";
+		})
+		console.log(ul)
+		document.getElementById('list1').innerHTML=ul
+
+
+	</script>
+</body>
+</html>

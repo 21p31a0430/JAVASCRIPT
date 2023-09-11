@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>entry code</title>
+	<style type="text/css">
+		label{
+			color: black;
+		}
+		#sp_id{
+			color: red;
+		}
+		
+		
+
+
+	</style>
+</head>
+<body>
+	<label>Enter your name</label>
+	<input type="text" onkeyup="sample(this.value)" id="ins_id">
+	<br>
+	<span id="sp_id"></span>
+	<script type="text/javascript">
+		function sample(str){
+			if(str.length<4){
+				document.getElementById('ins_id').style.boarder = '1px solid red';
+				document.getElementById('sp_id').innerText='please enter more than 3 characteristics'
+				
+		}
+	}
+		
+
+	</script>
+
+</body>
+</html>

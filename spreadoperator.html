@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SPREAD OPERATOR</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//1st way//
+		let arr=[12,34,53,56];
+        /*console.log(arr)
+        console.log(...arr)*/
+        //2nd way//
+        let arr1=[23,56,...arr]
+        //console.log(arr1)
+        //3rd way
+        let arr2=[12,321,678]
+        let arr3=[90,78,43]
+        let arr4=[...arr2,...arr3]
+        //let arr4=[...arr2,98,11,...arr3,80,75]
+        //console.log(arr4)
+        //4th way
+        let str='drive ready';
+        //console.log(...str)
+        //5th way
+        function sum(a,b,c,d){
+        	console.log(a+b+c+d)
+        }
+        let arr5=[11,12,13,14]
+        sum(...arr5)
+	</script>
+</body>
+</html>

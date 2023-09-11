@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<h2>regular expression</h2>
+<input type="text" name="" id="in_id">
+<button onclick="check_numornot()">check validity</button>
+<br>
+<span id="msg_id"></span>
+<script type="text/javascript">
+	function check_numornot(){
+		re=/^[8][0-9]{9}$/
+		let n=document.getElementById('in_id').value;
+		output=re.test(n);
+		if(output==true){
+			document.getElementById('msg_id').innerText='Correct';
+			document.getElementById('msg_id').style.color='green';
+		}else{
+			document.getElementById('msg_id').innerText='Please Enter correct format';
+			document.getElementById('msg_id').style.color='red';
+		}
+	}
+</script>
+</body>
+</html>

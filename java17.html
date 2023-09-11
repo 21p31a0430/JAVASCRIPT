@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>play game</title>
+	<style type="text/css">
+		label{
+			font-size:35px;
+			padding-top:100px;
+			
+
+		}
+		#center{
+			margin-top:75px;
+
+		}
+		input{
+			font-size:35px;
+			
+			
+		}
+		#but{
+			margin-top:50px;
+		}
+		#demo{
+			font-size:30px;
+		}
+		#output{
+			font-size:30px;
+		}
+		
+	</style>
+</head>
+<body>
+	<center id="center">
+  <div style="height:100px;width:600px;background-color:violet;border:2px solid black" >
+  	<div style="height:100px;width:100px;background-color:pink;float:left;">
+  		<label>1</label><br>
+  		<input type="radio" id="select"  name="button"  value=""style="border: 0px; width:25px; height: 2em;">
+  	</div>
+  	<div style="height:100px;width:100px;background-color:skyblue;float:left;">
+  		<label>2</label><br>
+  		<input type="radio" id="select"  name="button" value=""style="border: 0px; width:25px; height: 2em;">
+  	</div>
+  	<div style="height:100px;width:100px;background-color:yellow;float:left;">
+  		<label>3</label><br>
+  		<input type="radio" id="select"  name="button" value=""style="border: 0px; width:25px; height: 2em;">
+  	</div>
+  	<div style="height:100px;width:100px;background-color:violet;float:left;">
+  		<label>4</label><br>
+  		<input type="radio" id="select" name="button"  value=""style="border: 0px; width:25px; height: 2em;">
+  	</div>
+  	<div style="height:100px;width:100px;background-color:orange;float:left;">
+  		<label>5</label><br>
+  		<input type="radio" id="select" name="button"  value=""style="border: 0px; width:25px; height: 2em;">
+  	</div>
+  	<div style="height:100px;width:100px;background-color:lightgray;float:right;">
+  		<label>6</label><br>
+  		<input type="radio" id="select" name="button"  value=""style="border: 0px; width:25px; height: 2em;">
+  	</div>
+  	<input  id="but"type="button" value="play" onclick="play()"style="height:60px;width:100px;background-color:green;"><br><br>
+  	<p style="height:30px;width:300px;border:1px solid black"id="demo"></p><br><br>
+     <span id="output"></span>
+  </div>	
+  </center>
+  <script>
+function play() {
+  let uNum=document.getElementById("select");
+  let rNum= Math.floor(Math.random() * (5)) + 1;
+ document.getElementById("demo").innerHTML=rNum;
+  if (uNum==rNum){
+  	document.getElementById("output").innerHTML="You are Win";
+  }
+  else{
+  	document.getElementById("output").innerHTML="You are Lost";
+  }
+}
+
+
+</script>
+</body>
+</html>

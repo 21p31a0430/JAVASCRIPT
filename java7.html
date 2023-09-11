@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Task</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var trainees=[{
+			'name':'likhitha',
+			'rollno':21,
+			'college':'ACET',
+			'branch':'ECE'
+		},
+		{
+			'name':'vandy',
+			'rollno':30,
+			'college':'ACET',
+			'branch':'ECE'
+		},
+		{
+			'name':'krishna',
+			'rollno':32,
+			'college':'ACET',
+			'branch':'ECE'
+		},
+		{
+			'name':'satya',
+			'rollno':37,
+			'college':'ACET',
+			'branch':'ECE'
+		},
+		{
+			'name':'likhi',
+			'rollno':23,
+			'college':'ACET',
+			'branch':'ECE'
+		}]
+		for (var i=0;i<trainees.length;i++)
+		{
+
+		for(keys in trainees[i])
+		{
+          document.write((i+1)+". "+trainees[i][keys]+" ")
+		}
+		document.write("<br>")
+	}
+	</script>
+</body>
+</html>

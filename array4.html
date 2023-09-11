@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<table id="table_id" border="1" cellspacing="0"></table>
+<body>
+	<script type="text/javascript">
+		let trainees=['vandy','krish','monisha','ganga']
+		let trainees1=[
+		{
+			'name':'prashanth',
+			'rollno':1234
+		},
+		{
+			'name':'vandana',
+			'rollno':5678
+		}]
+		let tr='';
+		trainees1.map(function(each_trainee,i,arr){
+			tr+="<tr><td>"+(i+1)+"</td><td>"+each_trainee.name+"</td><td>"+each_trainee.rollno+"</td></tr>";
+		})
+		console.log(tr)
+		document.getElementById('table_id').innerHTML=tr
+	</script>
+</body>
+</html>

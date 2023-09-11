@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		class Student{
+			constructor(rno,first_name,last_name,clg){
+				this.rollno=rno;
+				this.f_name=first_name;
+				this.l_name=last_name;
+				this.college=clg;
+                this.getfullname=function(){
+                	return this.f_name+" "+this.l_name
+                }
+			}
+		}
+		let obj=new Student(430,'Vandana','Kosuri','ACET')
+		console.log(obj.getfullname())
+	</script>
+</body>
+</html>

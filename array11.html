@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		let nums=[12,34,56]
+		//nums.reduce(function(acc,ele,i,arr))
+		let sum=nums.reduce(function(acc,ele){
+			return acc+ele
+		})
+		//1st iteration acc=0,ele=12 => 0+12=12
+		//2nd iteration acc=12,ele=34 => 34+12=46
+		//3rd iteration acc=46,ele=56 => 46+56=102
+		console.log(sum)
+	</script>
+</body>
+</html>

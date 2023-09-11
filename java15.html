@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>calculator</title>
+    <style type="text/css">
+        img{
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div style="height: 500px;width: 1000px;background-color: black;">
+        <div style="height: 500px;width: 700px;background-color: skyblue;float: left;">
+            <img src="1.jfif" style="height: 500px;width:200px;" onclick="getimg('1.jfif')">
+            <img src="2.jfif" style="height: 500px;width: 200px;" onclick="getimg('2.jfif')">
+            <img src="3.jpg" style="height: 500px;width: 200px;" onclick="getimg('3.jpg')">
+            
+        </div>
+        <div style="height: 500px;width: 300px;background-color: aqua;float:right;" id="1st_id"></div>
+    </div>
+    </center>
+    <script type="text/javascript">
+       function getimg(img_path){
+                document.getElementById('1st_id').innerHTML="<img src='"+img_path+"' style='width:300px;height:500px'>";
+       }
+    </script>
+</body>
+</html>

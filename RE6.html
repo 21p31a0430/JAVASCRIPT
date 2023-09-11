@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		re=/^[0-9]{10}$/ //$--> it returns false if it exceeds the limit otherwise even though it exceeds the limit it displays true.
+		re=/^[0-9]{10}/ //valid upto 10 numbers but exceeded the range
+		re=/^[9][0-9]{9}$/ //starting with number 9
+		output=re.test("9876543210")
+		document.write(output)
+	</script>
+</body>
+</html>
